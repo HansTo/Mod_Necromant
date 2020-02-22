@@ -83,8 +83,8 @@ data:extend(
 	-- poison ammo
 	{
 		type = "ammo",
-		name = "necro-poison-ammo",
-		icon = "__necromant__/graphics/icons/poison-ammo.png",
+		name = "necro-ammo-poison",
+		icon = "__necromant__/graphics/icons/ammo-poison.png",
 		icon_size = 32,
 		--subgroup = "ammo",
 		subgroup = "necromant-filter-products",
@@ -129,8 +129,58 @@ data:extend(
 		magazine_size = 10,
 		order = "a[basic-clips]-z",
 	},
+	-- chitin ammo
+	{
+		type = "ammo",
+		name = "necro-ammo-chitin",
+		icon = "__necromant__/graphics/icons/ammo-chitin.png",
+		icon_size = 32,
+		--subgroup = "ammo",
+		subgroup = "necromant-filter-products",
+		order = "aa",
+		stack_size = 200,
+		ammo_type =
+		{
+		  category = "bullet",
+		  action =
+		  {
+			type = "direct",
+			action_delivery =
+			{
+			  type = "instant",
+			  source_effects =
+			  {
+				  type = "create-explosion",
+				  entity_name = "explosion-gunshot"
+			  },
+			  target_effects =
+			  {
+				{
+				  type = "create-entity",
+				  entity_name = "explosion-hit"
+				},
+				{
+				  type = "damage",
+				  damage = { amount = 16 , type = "physical"}
+				},
+				{
+				  type = "damage",
+				  damage = { amount = 10 , type = "poison"}
+				},
+				{
+				  type = "damage",
+				  damage = { amount = 8 , type = "explosion"}
+				}
+			  }
+			}
+		  }
+		},
+		magazine_size = 10,
+		order = "a[basic-clips]-z",
+	},
+
 	
-	-- heal
+	-- biter-steak
 	{
 		type = 'capsule',
 		name = 'necro-biter-steak',
@@ -169,6 +219,7 @@ data:extend(
 		  }
 		}
 	},
+	-- heal
 	{
 		type = 'capsule',
 		name = 'necro-heal-potion',
@@ -207,7 +258,6 @@ data:extend(
 		  }
 		}
 	},
-	
 	-- worms
 	{
 		type = "item",
@@ -218,6 +268,7 @@ data:extend(
 		order = "g",
 		stack_size = 200
 	},
+	-- worm stone wall
 	{
 		type = "item",
 		name = "necro-item-worm-stone-wall",
@@ -228,6 +279,7 @@ data:extend(
 		place_result = "necro-worm-stone-wall",
 		stack_size = 200
 	},
+	-- worm gate
 	{
 		type = "item",
 		name = "necro-item-worm-gate",
@@ -238,7 +290,6 @@ data:extend(
 		place_result = "necro-worm-gate",
 		stack_size = 200
 	},
-	
 	-- fire ball
 	{
 		type = "gun",
@@ -259,6 +310,7 @@ data:extend(
 		},
 		stack_size = 5
 	},
+	-- fireball powder
 	{
 		type = "ammo",
 		name = "necro-fireball-powder",
@@ -291,6 +343,7 @@ data:extend(
 		order = "b",
 		stack_size = 1000
 	},
+	-- burning substance
 	{
 		type = "item",
 		name = "necro-burning_substance",
@@ -302,6 +355,7 @@ data:extend(
 		order = "c",
 		stack_size = 200
 	},
+	-- dried chemicals
 	{
 		type = "item",
 		name = "necro-dried-chemicals",

@@ -263,14 +263,14 @@ data:extend(
 	-- alien poison ammo
 	{
 		type = "technology",
-		name = "necro-tech-poison-ammo",
-		icon = "__necromant__/graphics/icons/poison-ammo.png",
+		name = "necro-tech-ammo-poison",
+		icon = "__necromant__/graphics/icons/ammo-poison.png",
 		icon_size = 32,
 		effects =
 		{
 			{
 				type = "unlock-recipe",
-				recipe = "necro-recipe-poison-ammo"
+				recipe = "necro-recipe-ammo-poison"
 			}
 		},
 		prerequisites = {"necro-tech-alien-chemicals-results", "military-2"},
@@ -282,6 +282,33 @@ data:extend(
 				{"logistic-science-pack", 2},
 				{"chemical-science-pack", 1},
 				{"military-science-pack", 1},
+			},
+			time = 30
+		},
+		order = "z-d-f"
+	},
+		-- alien chitin ammo
+	{
+		type = "technology",
+		name = "necro-tech-ammo-chitin",
+		icon = "__necromant__/graphics/icons/ammo-chitin.png",
+		icon_size = 32,
+		effects =
+		{
+			{
+				type = "unlock-recipe",
+				recipe = "necro-recipe-ammo-chitin"
+			}
+		},
+		prerequisites = {"necro-tech-ammo-poison", "military-3"},
+		unit =
+		{
+			count = 50,
+			ingredients = {
+				{"automation-science-pack", 3},
+				{"logistic-science-pack", 2},
+				{"chemical-science-pack", 1},
+				{"military-science-pack", 2},
 			},
 			time = 30
 		},

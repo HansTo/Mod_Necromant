@@ -3,6 +3,7 @@ Version: 0.18.4
 Date: 2020-02-xx
   Changes: 
     - Minor typo correction, regrouping of icons in menus
+    - Added Chitin and Behemoth ammo
 ---------------------------------------------------------------------------------------------------
 Version: 0.18.3
 Date: 2020-02-21
