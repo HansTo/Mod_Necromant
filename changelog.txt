@@ -1,0 +1,178 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.18.4
+Date: 2020-02-xx
+  Changes: 
+    - Minor typo correction, regrouping of icons in menus
+---------------------------------------------------------------------------------------------------
+Version: 0.18.3
+Date: 2020-02-21
+  Info:
+    - Reformatting change log
+  Changes:
+    - Fixed the gunshot_sound issues from 0.18.1
+    - Adding experimental startup setting.
+  Experimental:
+    - !! If enabled, new features are available for testing after restart. 
+    - !! These features may break the mod, please provide feedback when it happens.
+    - !! If you do, please mention mod version and if the experimental flag is enabled or not.
+    - Recipe Alien DNA 1 from Raw fish and Wood   
+    - Recipe Alien DNA 2 from Bones, Flesh
+    - Recipe Alien DNA 3 from Brain, Steak using protein and acid
+    - Recipe Alien DNA 4 from Chitin, Enriched Bones using protein and acid
+---------------------------------------------------------------------------------------------------
+Version: 0.18.2
+Date: 2020-02-17
+  Changes:
+    - Added behemoth worm to the recipes, dropping 12 bones, 8 flesh and 82 chintin
+---------------------------------------------------------------------------------------------------
+Version: 0.18.1
+Date: 2020-02-17
+  Changes:
+    - Update by Trblz to make this mod work in 0.18, merging changes from https://mods.factorio.com/mod/necromant-trblz
+    - Disabled in prototypes/fireball-turret.lua line 158 sound = make_heavy_gunshot_sounds()
+---------------------------------------------------------------------------------------------------
+Version: 0.18.0
+Date: 2020-02-04
+  Info:
+    - Quick fix by Trblz in separate mod https://mods.factorio.com/mod/necromant-trblz
+---------------------------------------------------------------------------------------------------
+Version: 0.17.2
+Date: 2019-04-20
+  Changes:
+    - Fixed one wrong image link for non hr graphics (reported by Thedrah).
+---------------------------------------------------------------------------------------------------
+Version: 0.17.1
+Date: 2019-03-03
+  Info:
+    - locale correction & added change log
+---------------------------------------------------------------------------------------------------
+Version: 0.17.0
+Date: 2019-03-01
+  Info:
+    - update for 0.17.x
+---------------------------------------------------------------------------------------------------
+Version: 0.16.7
+Date: 2018-08-19
+  Changes:
+    - added mod settings for various stuff (DNA, Chitin, Fireball...)
+    - added optional dependency 5dim battlefield
+    - doubled heal of heal potion
+    - reduced amount of ingredients for DNA recipes
+---------------------------------------------------------------------------------------------------
+Version: 0.16.6
+Date: 2018-08-12
+  Changes:
+    - Added recipe to make alien artifacts from dried alien chemicals.
+    - Little technology adjustment due changes.
+  Rebalance:
+    - Dried alien chemical need now 5 instead of 1 alien chemical.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.5
+Date: 2018-07-14
+  Changes:
+    - Adjusted recipe for Fireball launcher.
+    - Fixed missing description for technology fireball damage.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.4
+Date: 2018-07-07
+  Changes:
+    - Added fireball tower and fireball artillery.
+    - Changed science pack requirement for fireball from blue to military science pack.
+    - Chitin processing now requires resin, if bob plates installed.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.3
+Date: 2018-01-12
+  Changes:
+    - Readded the prerequisite Chitin processing for heavy armor tech.
+    - Changed fireball staff to fireball laucher. Compare this https://youtu.be/wvpjAyHH490
+    - Fixed the range of the fireball, which became too high in 0.16.x.
+    - Reduced the cooldown for the fireball by 25%.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.2
+Date: 2018-01-05
+  Info:
+    - Added support for 5dim's Battlefield mod.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.1
+Date: 2018-01-04
+  Rebalance:
+    - Rebalanced fireball. Increased the damage, but reduced the area.
+---------------------------------------------------------------------------------------------------
+Version: 0.16.0
+Date: 2017-12-16
+  Info:
+    - Upgrade for 0.16.x.
+    - Minimal tested, please report the bugs, strange behaviour (fireball may have a problem and need to be improved).
+---------------------------------------------------------------------------------------------------
+Version: 0.15.9
+Date: 2017-11-19
+  Changes:
+    - Added bob's enemies drops.
+    - Code improvemnet for compability.
+---------------------------------------------------------------------------------------------------
+Version: 0.15.8
+Date: 2017-09-30
+  Changes:
+    - Added a new recipe to make "Enriched Bones" from fish.
+    - Bob's alien science packs now require 2 Alien DNA.
+    - Changed the picture of "Enriched Bones" to look more different from "Bones".
+---------------------------------------------------------------------------------------------------
+Version: 0.15.7
+Date: 2017-06-18
+  Changes:
+    - Increased fireball damage modifiers by technology.
+    - Increased fireball aoe from 5 to 7.
+    - Increased light radius of flying fireball.
+    - Increased DNA in science packs by 3.
+    - Correction: Worm Wall and Gate are now in Necromant filter category.
+---------------------------------------------------------------------------------------------------
+Version: 0.15.6
+Date: 2017-06-11
+  Changes:
+    - Added the recipe to mix flesh with bones for more charcoal.
+    - Added damage upgrade research (20) for fireball.
+    - Adjusted fluid values to 0.15.x style.
+    - Doubled required amount of brains and flesh for DNA and alien chemicals.
+---------------------------------------------------------------------------------------------------
+Version: 0.15.5
+Date: 2017-06-04
+  Changes:
+    - Added background colors to corpse items to make them better visible on the ground.
+    - Added worms drops, processing, tech and worm walls (according to suggestion of diongham).
+    - Added and intergrated bob worms drops.
+    - Increased animation of fireball in hit by 50% to make the aoe better visible.
+---------------------------------------------------------------------------------------------------
+Version: 0.15.4
+Date: 2017-05-21
+  Rebalance:
+    - Increased Fireball damge (more than double).
+---------------------------------------------------------------------------------------------------
+Version: 0.15.3
+Date: 2017-05-21
+  Changes:
+    - Fireball is creating a flame now.
+---------------------------------------------------------------------------------------------------
+Version: 0.15.2
+Date: 2017-05-20
+  Changes:
+    - Change damage of fireball from explosion to fire.
+---------------------------------------------------------------------------------------------------
+Version: 0.15.1
+Date: 2017-05-20
+  Changes:
+    - Added Fireball magic and ingredients.
+    - Reordered and created recipe groups.
+    - Reordered item groups (for filtering items).
+---------------------------------------------------------------------------------------------------
+Version: 0.15.0
+Date: 2017-05-14
+  Changes:
+    - Adjusted alien science: now "Alien DNA" is required for military science pack, high-tech science pack and production science pack.
+    - Technology "Poison ammo" now uses military science packs instead of alien science pack.
+    - Technology "Heal potion" now uses production science pack instead of alien science pack.
+    - Technology "Biter Steak" is now required for technology "Heal Potion".
+    - Technology "Alien poison from protein" now uses production science pack instead of alien science pack.
+    - Increased most stack sizes (around double).
+    - Decreased the heal of "Biter steak" to 30 to make "Heal potion" more attracitve.
+    - Adjusted category image and improved chiting fragment image to look more different from chitin.
+    - Modified Poison ammo: physical damage increased from 5 to 6 and added 8 explosive damage.

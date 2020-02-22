@@ -1,0 +1,11 @@
+{
+  "name": "necromant",
+  "version": "0.18.4",
+  "factorio_version": "0.18",
+  "title": "Necromant 0.18",
+  "author": "Sacredd, Trblz",
+  "contact": "",
+  "homepage": "https://forums.factorio.com/viewtopic.php?f=97&t=37373",
+  "description": "You want killing enemies become more useful and get some more useful stuff in this game? Then this mod is for you. Adds enemy drops and exploitation of their corpses. Also provides fireball (incl. towers) and poison ammo.",
+  "dependencies": ["base >= 0.18.0", "? bobenemies", "? 5dim_battlefield"]
+}
