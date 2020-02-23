@@ -127,7 +127,7 @@ data:extend(
 		  }
 		},
 		magazine_size = 10,
-		order = "a[basic-clips]-z",
+		order = "z-a",
 	},
 	-- chitin ammo
 	{
@@ -176,9 +176,57 @@ data:extend(
 		  }
 		},
 		magazine_size = 10,
-		order = "a[basic-clips]-z",
+		order = "z-b",
 	},
-
+	-- behemoth ammo
+	{
+		type = "ammo",
+		name = "necro-ammo-behemoth",
+		icon = "__necromant__/graphics/icons/ammo-behemoth.png",
+		icon_size = 32,
+		--subgroup = "ammo",
+		subgroup = "necromant-filter-products",
+		order = "aa",
+		stack_size = 200,
+		ammo_type =
+		{
+		  category = "bullet",
+		  action =
+		  {
+			type = "direct",
+			action_delivery =
+			{
+			  type = "instant",
+			  source_effects =
+			  {
+				  type = "create-explosion",
+				  entity_name = "explosion-gunshot"
+			  },
+			  target_effects =
+			  {
+				{
+				  type = "create-entity",
+				  entity_name = "explosion-hit"
+				},
+				{
+				  type = "damage",
+				  damage = { amount = 20 , type = "physical"}
+				},
+				{
+				  type = "damage",
+				  damage = { amount = 20 , type = "poison"}
+				},
+				{
+				  type = "damage",
+				  damage = { amount = 20 , type = "explosion"}
+				}
+			  }
+			}
+		  }
+		},
+		magazine_size = 10,
+		order = "z-c",
+	},
 	
 	-- biter-steak
 	{

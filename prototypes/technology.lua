@@ -125,7 +125,7 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-chitin-to-worm-chitin",
-		icon = "__necromant__/graphics/icons/worms/worm_chitin.png",
+		icon = "__necromant__/graphics/technology/worm_chitin.png",
 		icon_size = 32,
 		effects =
 		{
@@ -287,7 +287,7 @@ data:extend(
 		},
 		order = "z-d-f"
 	},
-		-- alien chitin ammo
+	-- alien chitin ammo
 	{
 		type = "technology",
 		name = "necro-tech-ammo-chitin",
@@ -301,6 +301,33 @@ data:extend(
 			}
 		},
 		prerequisites = {"necro-tech-ammo-poison", "military-3"},
+		unit =
+		{
+			count = 50,
+			ingredients = {
+				{"automation-science-pack", 3},
+				{"logistic-science-pack", 2},
+				{"chemical-science-pack", 1},
+				{"military-science-pack", 2},
+			},
+			time = 30
+		},
+		order = "z-d-f"
+	},
+		-- alien behemoth ammo
+	{
+		type = "technology",
+		name = "necro-tech-ammo-behemoth",
+		icon = "__necromant__/graphics/icons/ammo-behemoth.png",
+		icon_size = 32,
+		effects =
+		{
+			{
+				type = "unlock-recipe",
+				recipe = "necro-recipe-ammo-behemoth"
+			}
+		},
+		prerequisites = {"necro-tech-ammo-chitin", "military-3"},
 		unit =
 		{
 			count = 50,
@@ -422,7 +449,7 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-small-biter-corpse",
-		icon = "__necromant__/graphics/icons/biters/small-biter-processing.png",
+		icon = "__necromant__/graphics/technology/small-biter-processing.png",
 		icon_size = 32,
 		effects =
 		{
@@ -452,7 +479,7 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-medium-biter-corpse",
-		icon = "__necromant__/graphics/icons/biters/medium-biter-processing.png",
+		icon = "__necromant__/graphics/technology/medium-biter-processing.png",
 		icon_size = 32,
 		effects =
 		{
@@ -475,7 +502,7 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-big-biter-corpse",
-		icon = "__necromant__/graphics/icons/biters/big-biter-processing.png",
+		icon = "__necromant__/graphics/technology/big-biter-processing.png",
 		icon_size = 32,
 		effects =
 		{
@@ -499,7 +526,7 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-behemoth-biter-corpse",
-		icon = "__necromant__/graphics/icons/biters/behemoth-biter-processing.png",
+		icon = "__necromant__/graphics/technology/behemoth-biter-processing.png",
 		icon_size = 32,
 		effects =
 		{
@@ -526,7 +553,7 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-small-spitter-corpse",
-		icon = "__necromant__/graphics/icons/spitters/small-spitter-processing.png",
+		icon = "__necromant__/graphics/technology/small-spitter-processing.png",
 		icon_size = 32,
 		effects =
 		{
@@ -549,7 +576,7 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-medium-spitter-corpse",
-		icon = "__necromant__/graphics/icons/spitters/medium-spitter-processing.png",
+		icon = "__necromant__/graphics/technology/medium-spitter-processing.png",
 		icon_size = 32,
 		effects =
 		{
@@ -572,7 +599,7 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-big-spitter-corpse",
-		icon = "__necromant__/graphics/icons/spitters/big-spitter-processing.png",
+		icon = "__necromant__/graphics/technology/big-spitter-processing.png",
 		icon_size = 32,
 		effects =
 		{
@@ -596,7 +623,7 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-behemoth-spitter-corpse",
-		icon = "__necromant__/graphics/icons/spitters/behemoth-spitter-processing.png",
+		icon = "__necromant__/graphics/technology/behemoth-spitter-processing.png",
 		icon_size = 32,
 		effects =
 		{
@@ -623,7 +650,7 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-small-worm-corpse",
-		icon = "__necromant__/graphics/icons/worms/small-worm-processing.png",
+		icon = "__necromant__/graphics/technology/small-worm-processing.png",
 		icon_size = 32,
 		effects =
 		{
@@ -646,7 +673,7 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-medium-worm-corpse",
-		icon = "__necromant__/graphics/icons/worms/medium-worm-processing.png",
+		icon = "__necromant__/graphics/technology/medium-worm-processing.png",
 		icon_size = 32,
 		effects =
 		{
@@ -670,7 +697,7 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-big-worm-corpse",
-		icon = "__necromant__/graphics/icons/worms/big-worm-processing.png",
+		icon = "__necromant__/graphics/technology/big-worm-processing.png",
 		icon_size = 32,
 		effects =
 		{
@@ -695,7 +722,7 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-behemoth-worm-corpse",
-		icon = "__necromant__/graphics/icons/worms/behemoth-worm-processing.png",
+		icon = "__necromant__/graphics/technology/behemoth-worm-processing.png",
 		icon_size = 32,
 		effects =
 		{
@@ -730,8 +757,8 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-dna1",
-		icon = "__necromant__/graphics/stomach1.png",
-		icon_size = 256,
+		icon = "__necromant__/graphics/technology/dna_extract1.png",
+		icon_size = 128,
 		effects =
 		{
 			{
@@ -760,8 +787,8 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-dna2",
-		icon = "__necromant__/graphics/stomach2.png",
-		icon_size = 256,
+		icon = "__necromant__/graphics/technology/dna_extract2.png",
+		icon_size = 128,
 		effects =
 		{
 			{
@@ -790,8 +817,8 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-dna3",
-		icon = "__necromant__/graphics/stomach3.png",
-		icon_size = 256,
+		icon = "__necromant__/graphics/technology/dna_extract3.png",
+		icon_size = 128,
 		effects =
 		{
 			{
@@ -820,8 +847,8 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-dna4",
-		icon = "__necromant__/graphics/stomach4.png",
-		icon_size = 256,
+		icon = "__necromant__/graphics/technology/dna_extract4.png",
+		icon_size = 128,
 		effects =
 		{
 			{

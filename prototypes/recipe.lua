@@ -368,7 +368,7 @@ data:extend(
     icon_size = 32,
     order = "f"
   },
-      -- Alien chitin poison ammo
+    -- Alien chitin poison ammo
   {
     type = "recipe",
     name = "necro-recipe-ammo-chitin",
@@ -385,6 +385,26 @@ data:extend(
     result = "necro-ammo-chitin",
     result_count = 1,
     icon = "__necromant__/graphics/icons/ammo-chitin.png",
+    icon_size = 32,
+    order = "f"
+  },
+     -- Alien behemoth ammo
+  {
+    type = "recipe",
+    name = "necro-recipe-ammo-behemoth",
+    category = "crafting-with-fluid",
+    subgroup = "necro-magic",
+    energy_required = 5,
+    enabled = false,
+    ingredients =
+    {
+      {"necro-ammo-chitin", 1},
+      {"uranium-238", 1},
+      {type="fluid", name="sulfuric-acid", amount=10}
+    },
+    result = "necro-ammo-behemoth",
+    result_count = 1,
+    icon = "__necromant__/graphics/icons/ammo-behemoth.png",
     icon_size = 32,
     order = "f"
   },

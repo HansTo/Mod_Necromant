@@ -1,0 +1,18 @@
+{
+  "entity":
+  [
+    ["poison-ammo", "ammo-poison"]
+  ],
+  "item":
+  [
+    ["poison-ammo", "ammo-poison"]
+  ],
+  "technology":
+  [
+    ["poison-ammo", "ammo-poison"]
+  ],
+  "recipe":
+  [
+    ["poison-ammo", "ammo-poison"]
+  ]
+}
