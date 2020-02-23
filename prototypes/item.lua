@@ -10,6 +10,7 @@ data:extend(
 		order = "d",
 		stack_size = 200
 	},
+	-- biter flesh
 	{
 		type = "item",
 		name = "necro-biter-flesh",
@@ -19,6 +20,7 @@ data:extend(
 		order = "e",
 		stack_size = 200
 	},
+	-- alien dna
 	{
 		type = "item",
 		name = "necro-alien-dna",
@@ -28,6 +30,7 @@ data:extend(
 		order = "c",
 		stack_size = 200
 	},
+	-- bones
 	{
 		type = "item",
 		name = "necro-bones",
@@ -37,6 +40,7 @@ data:extend(
 		order = "i-a",
 		stack_size = 200
 	},
+	-- charcoal
 	{
 		type = "item",
 		name = "necro-bones-charcoal",
@@ -52,6 +56,7 @@ data:extend(
 		ResultAmount = 2,
 		stack_size = 400
 	},
+	-- chitin fragment
 	{
 		type = "item",
 		name = "necro-chitin-fragment",
@@ -61,6 +66,7 @@ data:extend(
 		order = "g",
 		stack_size = 1000
 	},
+	-- chitin
 	{
 		type = "item",
 		name = "necro-chitin",
@@ -70,6 +76,7 @@ data:extend(
 		order = "f",
 		stack_size = 200
 	},
+	-- enriched bones
 	{
 		type = "item",
 		name = "necro-enriched-bones",
@@ -79,7 +86,6 @@ data:extend(
 		order = "i-b",
 		stack_size = 200
 	},
-	
 	-- poison ammo
 	{
 		type = "ammo",
@@ -227,7 +233,6 @@ data:extend(
 		magazine_size = 10,
 		order = "z-c",
 	},
-	
 	-- biter-steak
 	{
 		type = 'capsule',

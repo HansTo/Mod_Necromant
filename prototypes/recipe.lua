@@ -388,7 +388,7 @@ data:extend(
     icon_size = 32,
     order = "f"
   },
-     -- Alien behemoth ammo
+    -- Alien behemoth ammo
   {
     type = "recipe",
     name = "necro-recipe-ammo-behemoth",
@@ -811,10 +811,8 @@ data:extend(
 
 
 })
-  
-  -- Experimental functions ================================
-if settings.startup["necro-setting-experimental"].value == true then
 
+  -- DNA from bio materials  
 data:extend(
 {
     -- Alien DNA from Fish
@@ -986,6 +984,9 @@ data:extend(
   },
 
 })
+
+  -- Experimental functions ================================
+if settings.startup["necro-setting-experimental"].value == true then
 
 end
 

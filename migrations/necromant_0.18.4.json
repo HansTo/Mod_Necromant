@@ -10,7 +10,7 @@
   ],
   "technology":
   [
-    ["necro-recipe-poison-ammo", "necro-tech-ammo-poison"]
+    ["necro-tech-poison-ammo", "necro-tech-ammo-poison"]
   ],
   "recipe":
   [

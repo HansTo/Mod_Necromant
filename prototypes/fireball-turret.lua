@@ -155,18 +155,13 @@ data:extend(
       },
       range = 50,
 	  min_range = 16,
---TRBLZ
---Orig    sound = make_heavy_gunshot_sounds()
-		  sound =
-		  {
-			{
-			  filename = "__base__/sound/fight/heavy-gunshot-1.ogg",
-			  volume = 1.0
-			}
-		  }
-
-
-
+	  sound =
+	  {
+		{
+		  filename = "__base__/sound/fight/heavy-gunshot-1.ogg",
+		  volume = 1.0
+		}
+	  }
     },
     resistances =
     {
