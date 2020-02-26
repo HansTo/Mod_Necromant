@@ -1,7 +1,15 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.18.4
-Date: 2020-02-xx
+Version: 0.18.5
+Date: 2020-02-25
   Changes: 
+    - code cleanup
+    - solve bug with DNA from fish/wood
+---------------------------------------------------------------------------------------------------
+Version: 0.18.4
+Date: 2020-02-23
+  Changes: 
+    - Added migration script
+    - Moving Alien DNA recipes out of experimental
     - Minor typo correction, regrouping of icons in menus
     - Added Chitin and Behemoth ammo
 ---------------------------------------------------------------------------------------------------

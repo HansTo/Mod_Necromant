@@ -1,13 +1,15 @@
 require("prototypes.categories")
+require("prototypes.categories-ammo")
 require("prototypes.enemies.corpses")
 require("prototypes.item")
 require("prototypes.recipe")
-require("prototypes.technology")
 require("prototypes.recipe-artifacts")
+require("prototypes.technology")
 require("prototypes.fluids")
-require("prototypes.ammo-category")
 require("prototypes.projectiles")
 require("prototypes.entities")
 require("prototypes.walls")
 require("prototypes.technology-damage-upgrades")
 require("prototypes.fireball-turret")
+
+

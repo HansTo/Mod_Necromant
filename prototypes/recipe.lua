@@ -37,7 +37,7 @@ data:extend(
     icon_size = 32,
     order = "b"
   },
-     -- Biter steak
+    -- Biter steak
   {
     type = "recipe",
     name = "necro-biter-steak",
@@ -871,7 +871,7 @@ data:extend(
     icon_size = 64,
     order = "c"
   },
-      -- Alien DNA from Bones
+    -- Alien DNA from Bones
   {
     type = "recipe",
     name = "necro-alien-dna-from-bones",
@@ -913,7 +913,7 @@ data:extend(
     icon_size = 64,
     order = "e"
   },
-      -- Alien DNA from Biter Steak
+    -- Alien DNA from Biter Steak
   {
     type = "recipe",
     name = "necro-alien-dna-from-steak",
@@ -985,8 +985,5 @@ data:extend(
 
 })
 
-  -- Experimental functions ================================
-if settings.startup["necro-setting-experimental"].value == true then
 
-end
 

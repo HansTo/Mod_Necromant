@@ -1,0 +1,22 @@
+{
+  "entity":
+  [
+    ["poison-ammo", "ammo-poison"]
+  ],
+  "item":
+  [
+    ["necro-poison-ammo", "necro-ammo-poison"],
+    ["necro-fireball-lauchner", "necro-fireball-launcher"]
+  ],
+  "technology":
+  [
+    ["necro-tech-poison-ammo", "necro-tech-ammo-poison"],
+	["necro-fireball-damage", "necro-tech-fireball-damage"]
+  ],
+  "recipe":
+  [
+    ["necro-recipe-poison-ammo", "necro-recipe-ammo-poison"],
+    ["necro-fireball-lauchner-recipe", "necro-fireball-launcher-recipe"]
+
+  ]
+}
