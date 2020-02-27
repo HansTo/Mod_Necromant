@@ -441,7 +441,8 @@ data:extend(
 end
 
 
--- spitters, biters and worms
+-- spitters, biters and worms corpse
+
 data:extend(
 {
 	-- alien corpses =============
@@ -749,8 +750,7 @@ data:extend(
 
 )
 
--- experimental
-if settings.startup["necro-setting-experimental"].value == true then
+-- DNA from everything
 data:extend(
 {
 	-- DNA 1
@@ -876,4 +876,3 @@ data:extend(
 
 
 })
-end

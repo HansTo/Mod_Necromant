@@ -67,7 +67,7 @@ data:extend(
 	{
 		-- Trblz
 		type = "bool-setting",
-		name = "necro-setting-experimental",
+		name = "necro-setting-support-ne_enemies",
 		setting_type = "startup",
 		per_user = false,
 		default_value = false
