@@ -809,6 +809,28 @@ data:extend(
     order = "d"
   },
 
+  {
+  --Trblz necro-behemoth-worm-corpse
+    type = "recipe",
+    name = "necro-process-spawner-corpse",
+    energy_required = 30,
+    category = "advanced-crafting",
+    subgroup = "necro-worm-processing",
+    enabled = false,
+    ingredients =
+    {
+      {"necro-spawner-corpse", 1}
+    },
+    results=
+    {
+      {type="item", name="necro-bones", amount=12},
+      {type="item", name="necro-biter-flesh", amount=8},
+      {type="item", name="necro-worm-chitin", amount=82}
+    },
+    icon = "__necromant__/graphics/icons/spawner/spawner-corpse.png",
+    icon_size = 64,
+    order = "d"
+  },
 
 })
 

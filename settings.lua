@@ -1,5 +1,4 @@
-data:extend(
-{
+data:extend({
 	{
 		-- Alien artifact creation
 		type = "bool-setting",
@@ -67,9 +66,26 @@ data:extend(
 	{
 		-- Trblz
 		type = "bool-setting",
+		name = "necro-setting-debug-on",
+		setting_type = "startup",
+		per_user = false,
+		default_value = false
+	},
+	{
+		-- Trblz
+		type = "int-setting",
+		name = "necro-setting-probability",
+		setting_type = "startup",
+		per_user = false,
+		default_value = 80
+	},
+	{
+		-- Trblz
+		type = "bool-setting",
 		name = "necro-setting-support-ne_enemies",
 		setting_type = "startup",
 		per_user = false,
 		default_value = false
-	}
+	},
+	
 })

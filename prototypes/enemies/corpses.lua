@@ -124,6 +124,18 @@ data:extend(
 		order = "i-d",
 		stack_size = 200,
 		default_request_amount = 200
+	},
+	-- spawners ==========================================
+	{
+		type = "item",
+		name = "necro-spawner-corpse",
+		icon = "__necromant__/graphics/icons/spawner/spawner-corpse.png",
+		icon_size = 64,
+		subgroup = "necromant-filter-processing",
+		order = "i-e",
+		stack_size = 200,
+		default_request_amount = 200
 	}
+
 }
 )

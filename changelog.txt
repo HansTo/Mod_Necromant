@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.18.7
+Date: 2020-03-04
+  Changes: 
+    - included a quick fix for NE Enemies (disabled by default in mod settings). Original code by regedit200 as posted on https://forums.factorio.com/viewtopic.php?t=37373&start=20
+  New:
+    - spawners are dropping a corpses
+    - added spawner research level 0 research. Changed dependencies.
+---------------------------------------------------------------------------------------------------
 Version: 0.18.6
 Date: 2020-02-26
   Changes: 
@@ -25,10 +33,6 @@ Date: 2020-02-21
   Changes:
     - Fixed the gunshot_sound issues from 0.18.1
     - Adding experimental startup setting.
-  Experimental:
-    - !! If enabled, new features are available for testing after restart. 
-    - !! These features may break the mod, please provide feedback when it happens.
-    - !! If you do, please mention mod version and if the experimental flag is enabled or not.
     - Recipe Alien DNA 1 from Raw fish and Wood   
     - Recipe Alien DNA 2 from Bones, Flesh
     - Recipe Alien DNA 3 from Brain, Steak using protein and acid

@@ -441,22 +441,29 @@ data:extend(
 end
 
 
--- spitters, biters and worms corpse
+-- spitters, biters, worms and spawner corpses
 
 data:extend(
 {
 	-- alien corpses =============
-	-- biter
 	{
 		type = "technology",
-		name = "necro-tech-process-small-biter-corpse",
-		icon = "__necromant__/graphics/technology/small-biter-processing.png",
-		icon_size = 32,
+		name = "necro-tech-process-start",
+		icon = "__necromant__/graphics/technology/processing-start.png",
+		icon_size = 128,
 		effects =
 		{
 			{
 				type = "unlock-recipe",
 				recipe = "necro-process-small-biter-corpse"
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "necro-process-small-spitter-corpse"
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "necro-process-small-worm-corpse"
 			},
 			{
 				type = "unlock-recipe",
@@ -477,11 +484,35 @@ data:extend(
 		},
 		order = "z-b-a"
 	},
+	-- biter
+	{
+		type = "technology",
+		name = "necro-tech-process-small-biter-corpse",
+		icon = "__necromant__/graphics/technology/processing-biter-small.png",
+		icon_size = 128,
+		effects =
+		{
+			{
+				type = "unlock-recipe",
+				recipe = "necro-process-small-biter-corpse"
+			},
+		},
+		prerequisites = {"necro-tech-process-start"},
+		unit =
+		{
+			count = 20,
+			ingredients = {
+				{"automation-science-pack", 1}
+			},
+			time = 10
+		},
+		order = "z-b-a"
+	},
 	{
 		type = "technology",
 		name = "necro-tech-process-medium-biter-corpse",
-		icon = "__necromant__/graphics/technology/medium-biter-processing.png",
-		icon_size = 32,
+		icon = "__necromant__/graphics/technology/processing-biter-medium.png",
+		icon_size = 128,
 		effects =
 		{
 			{
@@ -503,8 +534,8 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-big-biter-corpse",
-		icon = "__necromant__/graphics/technology/big-biter-processing.png",
-		icon_size = 32,
+		icon = "__necromant__/graphics/technology/processing-biter-big.png",
+		icon_size = 128,
 		effects =
 		{
 			{
@@ -527,8 +558,8 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-behemoth-biter-corpse",
-		icon = "__necromant__/graphics/technology/behemoth-biter-processing.png",
-		icon_size = 32,
+		icon = "__necromant__/graphics/technology/processing-biter-behemoth.png",
+		icon_size = 128,
 		effects =
 		{
 			{
@@ -554,8 +585,8 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-small-spitter-corpse",
-		icon = "__necromant__/graphics/technology/small-spitter-processing.png",
-		icon_size = 32,
+		icon = "__necromant__/graphics/technology/processing-spitter-small.png",
+		icon_size = 128,
 		effects =
 		{
 			{
@@ -563,7 +594,7 @@ data:extend(
 				recipe = "necro-process-small-spitter-corpse"
 			}
 		},
-		prerequisites = {"necro-tech-process-small-biter-corpse"},
+		prerequisites = {"necro-tech-process-start"},
 		unit =
 		{
 			count = 20,
@@ -577,8 +608,8 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-medium-spitter-corpse",
-		icon = "__necromant__/graphics/technology/medium-spitter-processing.png",
-		icon_size = 32,
+		icon = "__necromant__/graphics/technology/processing-spitter-medium.png",
+		icon_size = 128,
 		effects =
 		{
 			{
@@ -600,8 +631,8 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-big-spitter-corpse",
-		icon = "__necromant__/graphics/technology/big-spitter-processing.png",
-		icon_size = 32,
+		icon = "__necromant__/graphics/technology/processing-spitter-big.png",
+		icon_size = 128,
 		effects =
 		{
 			{
@@ -624,8 +655,8 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-behemoth-spitter-corpse",
-		icon = "__necromant__/graphics/technology/behemoth-spitter-processing.png",
-		icon_size = 32,
+		icon = "__necromant__/graphics/technology/processing-spitter-behemoth.png",
+		icon_size = 128,
 		effects =
 		{
 			{
@@ -646,13 +677,13 @@ data:extend(
 		},
 		order = "z-c-d"
 	},
-	
+
 	-- worm
 	{
 		type = "technology",
 		name = "necro-tech-process-small-worm-corpse",
-		icon = "__necromant__/graphics/technology/small-worm-processing.png",
-		icon_size = 32,
+		icon = "__necromant__/graphics/technology/processing-worm-small.png",
+		icon_size = 128,
 		effects =
 		{
 			{
@@ -660,7 +691,7 @@ data:extend(
 				recipe = "necro-process-small-worm-corpse"
 			}
 		},
-		prerequisites = {"necro-tech-process-small-biter-corpse"},
+		prerequisites = {"necro-tech-process-start"},
 		unit =
 		{
 			count = 100,
@@ -674,8 +705,8 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-medium-worm-corpse",
-		icon = "__necromant__/graphics/technology/medium-worm-processing.png",
-		icon_size = 32,
+		icon = "__necromant__/graphics/technology/processing-worm-medium.png",
+		icon_size = 128,
 		effects =
 		{
 			{
@@ -698,8 +729,8 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-big-worm-corpse",
-		icon = "__necromant__/graphics/technology/big-worm-processing.png",
-		icon_size = 32,
+		icon = "__necromant__/graphics/technology/processing-worm-big.png",
+		icon_size = 128,
 		effects =
 		{
 			{
@@ -723,8 +754,8 @@ data:extend(
 	{
 		type = "technology",
 		name = "necro-tech-process-behemoth-worm-corpse",
-		icon = "__necromant__/graphics/technology/behemoth-worm-processing.png",
-		icon_size = 32,
+		icon = "__necromant__/graphics/technology/processing-worm-behemoth.png",
+		icon_size = 128,
 		effects =
 		{
 			{
@@ -745,10 +776,38 @@ data:extend(
 		},
 		order = "z-f-d"
 	},
+	-- spawner
+	{
+		type = "technology",
+		name = "necro-tech-process-spawner-corpse",
+		icon = "__necromant__/graphics/technology/processing-spawner.png",
+		icon_size = 128,
+		effects =
+		{
+			{
+				type = "unlock-recipe",
+				recipe = "necro-process-spawner-corpse"
+			}
+		},
+		prerequisites = {
+			"necro-tech-process-behemoth-worm-corpse", 
+			"necro-tech-process-behemoth-biter-corpse",
+			"necro-tech-process-behemoth-spitter-corpse"
+			},
+		unit =
+		{
+			count = 100,
+			ingredients = {
+				{"automation-science-pack", 1},
+				{"logistic-science-pack", 1},
+				{"military-science-pack", 1}
+			},
+			time = 20
+		},
+		order = "z-f-d"
+	},
 
-}
-
-)
+})
 
 -- DNA from everything
 data:extend(

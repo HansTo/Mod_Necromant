@@ -3,6 +3,11 @@
 --
 -- posted on https://forums.factorio.com/viewtopic.php?t=37373&start=20
 --
+
+local corp_prob = 1 -- default probability
+local corp_prob = settings.startup["necro-setting-probability"].value/100
+
+
 local biter={}
 local spitter={}
 local worm={}
@@ -92,7 +97,7 @@ for i,unit in pairs (data.raw.unit) do
 					data.raw.turret[unit.name].loot = {}
 				end
 				if data.raw.item[unt[tp][lvl]] then
-					table.insert(data.raw.turret[unit.name].loot, { item = unt[tp][lvl],  count_min = 1,  count_max = 1,  probability = 1 } )
+					table.insert(data.raw.turret[unit.name].loot, { item = unt[tp][lvl],  count_min = 1,  count_max = 1,  probability = corp_prob } )
 				end
 			end
 		else
@@ -102,7 +107,7 @@ for i,unit in pairs (data.raw.unit) do
 					data.raw.unit[unit.name].loot = {}
 				end
 				if data.raw.item[unt[tp][lvl]] then
-					table.insert(data.raw.unit[unit.name].loot, {  item = unt[tp][lvl],  count_min = 1,  count_max = 1,  probability = 1 } )
+					table.insert(data.raw.unit[unit.name].loot, {  item = unt[tp][lvl],  count_min = 1,  count_max = 1,  probability = corp_prob } )
 				end
 			end
 		end
@@ -124,7 +129,7 @@ for i,unit in pairs (data.raw.unit) do
 					data.raw.unit[unit.name].loot = {}
 				end
 				if data.raw.item[unt[t][p]] then
-					table.insert(data.raw.unit[unit.name].loot, {  item = unt[t][p],  count_min = 1,  count_max = 1,  probability = 1 } )
+					table.insert(data.raw.unit[unit.name].loot, {  item = unt[t][p],  count_min = 1,  count_max = 1,  probability = corp_prob } )
 					--log ("done")
 				end
 			end
